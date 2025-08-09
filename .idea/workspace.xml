@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80944ae4-5c78-438f-ac77-eb70035bd306" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinanceTracker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evenodd_microservice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random_microservice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adapters/persistence/In_memory_portfolio_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/Portfolio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/Portfolio_Repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/In_memory_portfolio_repository_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/portfolio_controller_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evenodd_microservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_microservice.py" beforeDir="false" afterPath="$PROJECT_DIR$/adapters/controller/portfolio_controller.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,33 +50,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.evenodd_microservice.executor": "Run",
-    "Python.microservice.executor": "Run",
-    "Python.random_microservice.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/patryk/IdeaProjects",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2505747",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in In_memory_portfolio_repository_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in portfolio_controller_tests.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.In_memory_portfolio_repository.executor&quot;: &quot;Run&quot;,
+    &quot;Python.In_memory_portfolio_repository_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.evenodd_microservice.executor&quot;: &quot;Run&quot;,
+    &quot;Python.microservice.executor&quot;: &quot;Run&quot;,
+    &quot;Python.portfolio_controller.executor&quot;: &quot;Run&quot;,
+    &quot;Python.random_microservice.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/patryk/IdeaProjects&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2505747&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Tutorial" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.27812.49" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.27812.49" />
       </set>
     </attachedChunks>
   </component>
@@ -88,7 +98,12 @@
       <option name="presentableId" value="Default" />
       <updated>1753631580652</updated>
       <workItem from="1753631581944" duration="842000" />
-      <workItem from="1753889893291" duration="3069000" />
+      <workItem from="1753889893291" duration="3860000" />
+      <workItem from="1754157409918" duration="3201000" />
+      <workItem from="1754336733777" duration="6736000" />
+      <workItem from="1754600050726" duration="4036000" />
+      <workItem from="1754635098760" duration="4123000" />
+      <workItem from="1754751765941" duration="1989000" />
     </task>
     <servers />
   </component>
@@ -96,8 +111,12 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FinanceTracker$evenodd_microservice.coverage" NAME="evenodd_microservice Coverage Results" MODIFIED="1753885222188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FinanceTracker$In_memory_portfolio_repository.coverage" NAME="In_memory_portfolio_repository Coverage Results" MODIFIED="1754601394771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/FinanceTracker$In_memory_portfolio_repository_test.coverage" NAME="In_memory_portfolio_repository_test Coverage Results" MODIFIED="1754601416757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/FinanceTracker$.coverage" NAME=" Coverage Results" MODIFIED="1754636921166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/FinanceTracker$evenodd_microservice.coverage" NAME="evenodd_microservice Coverage Results" MODIFIED="1754329806778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tutorial" />
+    <SUITE FILE_PATH="coverage/FinanceTracker$portfolio_controller.coverage" NAME="portfolio_controller Coverage Results" MODIFIED="1754603555551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/adapters/controller" />
     <SUITE FILE_PATH="coverage/FinanceTracker$microservice.coverage" NAME="microservice Coverage Results" MODIFIED="1753884582933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FinanceTracker$random_microservice.coverage" NAME="random_microservice Coverage Results" MODIFIED="1753884794555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FinanceTracker$random_microservice.coverage" NAME="random_microservice Coverage Results" MODIFIED="1754329841892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tutorial" />
   </component>
 </project>
