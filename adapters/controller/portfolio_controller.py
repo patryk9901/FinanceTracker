@@ -6,6 +6,18 @@ import uuid
 app = Flask(__name__)
 repo = InMemoryPortfolioRepository()
 
+@app.route('/portfolio', methods=['POST'])
+def create_portfolio():
+    portfolio = Portfolio.create()
+    repo.save_portfolio(portfolio)
+
+    return jsonify({
+        "success": "portfolio is added",
+        "portfolioId": str(portfolio.portfolio_id),
+        "stockPositions": {}
+    }), 201
+
+
 @app.route('/portfolio', methods=['GET'])
 def get_portfolio():
     portfolio_id_str = request.args.get('portfolioId')
@@ -21,23 +33,10 @@ def get_portfolio():
     if portfolio is None:
         return jsonify({"error": "portfolio not found"}), 404
 
-    return jsonify({"portfolioId": str(portfolio.portfolio_id), "value": portfolio.value}), 200
-
-@app.route('/portfolio', methods=['POST'])
-def create_portfolio():
-    data = request.get_json()
-    value = data.get('value') if data else None
-    if not value:
-        return jsonify({"error": "value parameter missing"}), 400
-
-    portfolio = Portfolio.create(value)
-    repo.save_portfolio(portfolio)
-
     return jsonify({
-        "success": "portfolio is added",
         "portfolioId": str(portfolio.portfolio_id),
-        "portfolioValue": portfolio.value
-    }), 201
+        "stockPositions": {}
+    }), 200
 
 if __name__ == '__main__':
-    app.run(port=8000)
+    app.run(port=8000,debug=True)
