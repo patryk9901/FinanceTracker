@@ -1,4 +1,3 @@
-import pytest
 from unittest.mock import patch, Mock
 from decimal import Decimal
 from adapters.stockClient.DefaultStockClient import DefaultStockClient

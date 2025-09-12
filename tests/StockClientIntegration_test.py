@@ -1,6 +1,8 @@
 import pytest
 import os
-from dotenv import load_dotenv
+
+from flask.cli import load_dotenv
+
 from adapters.stockClient.DefaultStockClient import DefaultStockClient
 from domain.Stock import Stock
 from adapters.nbpclient.Money import Money

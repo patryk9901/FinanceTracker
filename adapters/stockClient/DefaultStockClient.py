@@ -1,7 +1,10 @@
-from dotenv import load_dotenv
+
 import os
 import requests
 from decimal import Decimal
+
+from flask.cli import load_dotenv
+
 from adapters.nbpclient.Money import Money
 from adapters.nbpclient.NBPApiClient import NBPApiClient
 import logging

@@ -1,8 +1,10 @@
 import pytest
-from adapters.nbpclient.NBPApiClient import NBPApiClient
+
 from decimal import Decimal
 
-@pytest.mark.integration
+from adapters.nbpclient.NBPApiClient import NBPApiClient
+
+
 def test_get_exchange_rate_integration():
     rate = NBPApiClient.get_exchange_rate("USD")
     assert isinstance(rate, Decimal)
